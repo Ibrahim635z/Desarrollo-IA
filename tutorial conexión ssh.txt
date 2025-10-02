@@ -1,0 +1,36 @@
+tutorial conexión ssh:
+pwd se donde estoy.
+ls ~/.ssh (para ver si tenemos una conexión)
+ssh-keygen -t ed25519 -C "imohahm635z@g.educaand.es" (generar la clave publica y privada ssh)
+eval "$(ssh-agent -s)" (hemos levantado el servidor ssh)
+ssh-add ~/.ssh/id_ed25519 (añadir la clave privada a mi sistema ) la publica acaba en .pub
+
+cat ~/.ssh/id_ed25519.pub (ver la clave publica para copiarla y llevarla al github)
+
+
+
+mkdir carpeta
+cd carpeta
+git init (inicializarseguimiento de carpeta)
+git config --global --list (vemos nuestra identificacion)
+git config --global user.name Ibrahim635z(colocar usuario github)
+git config --global user.email imohahm635z@g.educaand.es (colocar correo)
+echo "# Configurando SSH" > README.md (crear archivo ssh)
+
+git status -s (fichero que no he hecho seguimiento)
+git add .(añadir al área stage todo lo que hay en el directorio raiz)
+git add nombredelfichero
+
+(si hay ?? no esta en seguimiento si hay una A si esta en seguimiento)
+(si no sale nada de las dos anteriores significa que hemos hecho el commit)
+
+git commit -m "Created: README.md" (poner nombre riguroso)
+git log --oneline (nos dice info sobre los commits)
+git log (da mas información )
+
+git remote add origin git@github.com:Ibrahim635z/test-ssh-2.git (añadir nuestro repositorio la palabra origin es un alias que le damos a toda esa ruta)
+git remote -v (comprobar si estamos conectados remotamente al repositorio)
+pull me traigo lo que hay en el repositorio
+push para subirlo
+git push origin master
+

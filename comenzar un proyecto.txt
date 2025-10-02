@@ -1,0 +1,24 @@
+nvm = este software facilita la instalación de node.js sin necesidad de ir a la pagina a descargarlo
+nvm install 22
+nvm install 20(instalar el node.js)
+nvm use 20 (elegir que versión usar de node.js)
+nvm --versión (ver que versión estamos usando)
+(instalar curl)winget install cURL.URL 
+curl.exe --versión
+winget install jqlang.jq
+
+escafolding(creación de estructura de carpetas)
+mkdir scripts src
+touch {README.md,.gitignore,.env.example}
+ahora creamos el package.json --> npm init -y
+Instalar dependencias:
+npm install dotenv
+npm install nodemon -D
+
+Si quiero borrar la dependencia: npm remove nodemon
+Lo que no queremos hacerle seguimiento va en el .gitignore
+
+
+
+
+
