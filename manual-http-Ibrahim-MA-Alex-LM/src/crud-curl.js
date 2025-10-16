@@ -15,8 +15,8 @@ const BASE_URL = `${API_BASE_URL}:${PORT}`;
 const createStudent = (studentData) => {
   console.log(' COMANDO PARA CREAR UN ESTUDIANTE (CREATE)');
   const dataString = JSON.stringify(studentData);
-  const command = `curl -X POST -H "Content-Type: application/json" -d '${dataString}' ${BASE_URL}/students`;
-  console.log(command + '\n');
+  const comando = `curl -X POST -H "Content-Type: application/json" -d '${dataString}' ${BASE_URL}/students`;
+  console.log(comando + '\n');
 };
 
 /**
@@ -25,8 +25,8 @@ const createStudent = (studentData) => {
 
 const readAllStudents = () => {
   console.log('COMANDO PARA LEER TODOS LOS ESTUDIANTES (READ ALL)');
-  const command = `curl -X GET ${BASE_URL}/students`;
-  console.log(command + '\n');
+  const comando = `curl -X GET ${BASE_URL}/students`;
+  console.log(comando + '\n');
 };
 
 /**
@@ -36,8 +36,8 @@ const readAllStudents = () => {
 
 const readStudentById = (id) => {
   console.log(`COMANDO PARA LEER EL ESTUDIANTE CON ID ${id} (READ BY ID)`);
-  const command = `curl -X GET ${BASE_URL}/students/${id}`;
-  console.log(command + '\n');
+  const comando = `curl -X GET ${BASE_URL}/students/${id}`;
+  console.log(comando + '\n');
 };
 
 
@@ -50,8 +50,8 @@ const readStudentById = (id) => {
 const updateStudent = (id, studentData) => {
   console.log(`COMANDO PARA ACTUALIZAR (PUT) EL ESTUDIANTE CON ID ${id}`);
   const dataString = JSON.stringify(studentData);
-  const command = `curl -X PUT -H "Content-Type: application/json" -d '${dataString}' ${BASE_URL}/students/${id}`;
-  console.log(command + '\n');
+  const comando = `curl -X PUT -H "Content-Type: application/json" -d '${dataString}' ${BASE_URL}/students/${id}`;
+  console.log(comando + '\n');
 };
 
 /**
@@ -63,8 +63,8 @@ const updateStudent = (id, studentData) => {
 const patchStudent = (id, partialData) => {
   console.log(`COMANDO PARA ACTUALIZAR PARCIALMENTE (PATCH) EL ESTUDIANTE CON ID ${id} `);
   const dataString = JSON.stringify(partialData);
-  const command = `curl -X PATCH -H "Content-Type: application/json" -d '${dataString}' ${BASE_URL}/students/${id}`;
-  console.log(command + '\n');
+  const comando = `curl -X PATCH -H "Content-Type: application/json" -d '${dataString}' ${BASE_URL}/students/${id}`;
+  console.log(comando + '\n');
 };
 
 /**
@@ -74,8 +74,8 @@ const patchStudent = (id, partialData) => {
 
 const deleteStudent = (id) => {
   console.log(`COMANDO PARA ELIMINAR (DELETE) EL ESTUDIANTE CON ID ${id}`);
-  const command = `curl -X DELETE ${BASE_URL}/students/${id}`;
-  console.log(command + '\n');
+  const comando = `curl -X DELETE ${BASE_URL}/students/${id}`;
+  console.log(comando + '\n');
 };
 
 
