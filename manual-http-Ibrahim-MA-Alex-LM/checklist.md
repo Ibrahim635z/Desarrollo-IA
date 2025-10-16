@@ -43,7 +43,7 @@
 - [x] El script `npm run validate` pasa sin errores.
 
 ## Fase 7: Git y Entrega
-- [ ] Repositorio Git inicializado y conectado a GitHub.
+- [x] Repositorio Git inicializado y conectado a GitHub.
 - [ ] Rama `m1/http-request-response` creada.
 - [ ] Commits incrementales realizados con mensajes descriptivos.
 - [ ] Rama subida al repositorio remoto.
