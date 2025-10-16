@@ -1,0 +1,58 @@
+@baseUrl = http://localhost
+@port = 4000
+@apiUrl = {{baseUrl}}:{{port}}
+
+### CREATE - Crear un nuevo estudiante
+# Este comando crea un nuevo estudiante con los datos proporcionados.
+POST {{apiUrl}}/students
+Content-Type: application/json
+
+{
+  "name": "REST",
+  "lastname": "Client",
+  "email": "rest.client@test.com",
+  "level": "Intermedio",
+  "active": true
+}
+
+### READ - Todos los estudiantes 
+# Obtiene una lista de todos los estudiantes.
+GET {{apiUrl}}/students
+
+### READ - Estudiante por ID 
+# Obtiene un estudiante específico por su ID.
+GET {{apiUrl}}/students/4
+
+### READ - Filtrar estudiantes activos
+# Obtiene solo los estudiantes que tienen la propiedad "active" en true.
+GET {{apiUrl}}/students?active=true
+
+### READ - Filtrar por nivel 
+# Obtiene solo los estudiantes que son del nivel "Principiante".
+GET {{apiUrl}}/students?level=Principiante
+
+### UPDATE - Actualizar estudiante completo (PUT)
+# Reemplaza completamente los datos de un estudiante.
+PUT {{apiUrl}}/students/4
+Content-Type: application/json
+
+{
+  "name": "Estudiante",
+  "lastname": "Actualizado PUT",
+  "email": "put.update@test.com",
+  "level": "Avanzado",
+  "active": false
+}
+
+### PATCH - Actualizar campo específico 
+# Modifica solo el email de un estudiante.
+PATCH {{apiUrl}}/students/5
+Content-Type: application/json
+
+{
+  "email": "patch.update@test.com"
+}
+
+### DELETE - Eliminar estudiante
+# Elimina un estudiante por su ID.
+DELETE {{apiUrl}}/students/6
