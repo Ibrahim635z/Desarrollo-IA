@@ -8,9 +8,9 @@ POST {{apiUrl}}/students
 Content-Type: application/json
 
 {
-  "name": "REST",
-  "lastname": "Client",
-  "email": "rest.client@test.com",
+  "name": "ibra",
+  "lastname": "mohamed",
+  "email": "ibra_rest_client@test.com",
   "level": "Intermedio",
   "active": true
 }
@@ -21,7 +21,7 @@ GET {{apiUrl}}/students
 
 ### READ - Estudiante por ID 
 # Obtiene un estudiante específico por su ID.
-GET {{apiUrl}}/students/4
+GET {{apiUrl}}/students/7
 
 ### READ - Filtrar estudiantes activos
 # Obtiene solo los estudiantes que tienen la propiedad "active" en true.
@@ -37,9 +37,9 @@ PUT {{apiUrl}}/students/4
 Content-Type: application/json
 
 {
-  "name": "Estudiante",
-  "lastname": "Actualizado PUT",
-  "email": "put.update@test.com",
+  "name": "Manolo",
+  "lastname": "Perez",
+  "email": "Mperez@test.com",
   "level": "Avanzado",
   "active": false
 }
@@ -50,9 +50,9 @@ PATCH {{apiUrl}}/students/5
 Content-Type: application/json
 
 {
-  "email": "patch.update@test.com"
+  "email": "Manolo_Perez@test.com"
 }
 
 ### DELETE - Eliminar estudiante
 # Elimina un estudiante por su ID.
-DELETE {{apiUrl}}/students/6
+DELETE {{apiUrl}}/students/1
