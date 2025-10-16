@@ -1,0 +1,144 @@
+{
+  "students": [
+    {
+      "name": "Ana",
+      "lastname": "Fuentes",
+      "email": "ana.fuentes.updated@test.com",
+      "level": "Avanzado",
+      "active": true,
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Carlos Rodríguez Martín",
+      "email": "carlos.rodriguez@email.com",
+      "enrollmentDate": "2024-10-01",
+      "active": true,
+      "level": "beginner"
+    },
+    {
+      "name": "Estudiante",
+      "lastname": "Actualizado PUT",
+      "email": "put.update@test.com",
+      "level": "Avanzado",
+      "active": false,
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "name": "Laura Martínez Ruiz",
+      "email": "patch.update@test.com",
+      "enrollmentDate": "2024-09-25",
+      "active": true,
+      "level": "beginner"
+    },
+    {
+      "id": "6",
+      "name": "Javier López Gómez",
+      "email": "javier.lopez@email.com",
+      "enrollmentDate": "2024-07-15",
+      "active": true,
+      "level": "advanced"
+    },
+    {
+      "id": "1006",
+      "name": "Carlos",
+      "lastname": "Santana",
+      "email": "carlos.santana@test.com",
+      "level": "Intermedio",
+      "active": true
+    },
+    {
+      "id": "305d",
+      "name": "Carlos",
+      "lastname": "Santana",
+      "email": "carlos.santana@test.com",
+      "level": "Intermedio",
+      "active": true
+    },
+    {
+      "id": "a6cd",
+      "name": "Lucia",
+      "lastname": "Gomez",
+      "email": "lucia.gomez@test.com",
+      "level": "Principiante",
+      "active": false
+    },
+    {
+      "id": "8543",
+      "name": "REST",
+      "lastname": "Client",
+      "email": "rest.client@test.com",
+      "level": "Intermedio",
+      "active": true
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "title": "Desarrollo Web Full Stack",
+      "instructor": "Prof. Roberto Álvarez",
+      "duration": "120 horas",
+      "level": "intermediate",
+      "category": "Web Development"
+    },
+    {
+      "id": "2",
+      "title": "Introducción a Python",
+      "instructor": "Prof. Carmen Jiménez",
+      "duration": "60 horas",
+      "level": "beginner",
+      "category": "Programming"
+    },
+    {
+      "id": "3",
+      "title": "Machine Learning Avanzado",
+      "instructor": "Prof. Miguel Serrano",
+      "duration": "150 horas",
+      "level": "advanced",
+      "category": "Artificial Intelligence"
+    },
+    {
+      "id": "4",
+      "title": "APIs RESTful con Node.js",
+      "instructor": "Prof. Isabel Navarro",
+      "duration": "80 horas",
+      "level": "intermediate",
+      "category": "Backend Development"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "1",
+      "studentId": 1,
+      "courseId": 1,
+      "enrollmentDate": "2024-09-15",
+      "progress": 45,
+      "completed": false
+    },
+    {
+      "id": "2",
+      "studentId": 2,
+      "courseId": 2,
+      "enrollmentDate": "2024-10-01",
+      "progress": 20,
+      "completed": false
+    },
+    {
+      "id": "3",
+      "studentId": 4,
+      "courseId": 1,
+      "enrollmentDate": "2024-09-10",
+      "progress": 60,
+      "completed": false
+    },
+    {
+      "id": "4",
+      "studentId": 6,
+      "courseId": 3,
+      "enrollmentDate": "2024-07-15",
+      "progress": 100,
+      "completed": true
+    }
+  ]
+}
