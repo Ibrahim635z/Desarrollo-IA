@@ -1,0 +1,31 @@
+### Obtener informacion de un usuario especifico
+
+GET https://jsonplaceholder.typicode.com/users/1
+
+### Crear un usuario nuevo
+
+POST https://reqres.in/api/users
+Content-Type: application/json
+x-api-key: reqres-free-v1
+
+{
+    "name": "ibra",
+    "job": "estudiante"
+}
+
+### Login para obtener el token
+# @name login
+POST https://reqres.in/api/login
+Content-Type: application/json
+x-api-key: reqres-free-v1
+
+{
+"email": "eve.holt@reqres.in",
+  "password": "12345",
+}
+
+### Usar token obtenido mediante login
+# @name get-users
+GET https://reqres.in/api/users/2
+x-api-key: reqres-free-v1
+Authorization: Bearer {{login.response.body.token}}
